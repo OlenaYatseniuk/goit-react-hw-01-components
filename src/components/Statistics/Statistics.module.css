@@ -1,0 +1,33 @@
+.statsSection {
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+.statsTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.statsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 60px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.statsLabel {
+  margin-bottom: 10px;
+}
+
+.statsPercentage {
+  font-weight: 400;
+}
