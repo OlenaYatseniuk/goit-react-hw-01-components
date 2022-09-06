@@ -7,7 +7,7 @@ function Statistics({ title, stats }) {
     <section className={styles.statsSection}>
       {title ?
         (<h2 className={styles.statsTitle}>{title}</h2>)
-        : undefined}
+        : null}
       <ul className={styles.statsList}>
         {stats.map(({ id, percentage, label }) => (
           <li className={styles.statsItem} key={id} style={{ backgroundColor: getRandomHexColor() }}>

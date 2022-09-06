@@ -26,7 +26,12 @@ function TransactionHistory({items}) {
   )
 }
 
-TransactionHistory.propTypes = PropTypes.arrayOf(PropTypes.object.isRequired).isRequired;
+TransactionHistory.propTypes = PropTypes.arrayOf(PropTypes.shape({
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+}).isRequired).isRequired;
 
-export default TransactionHistory
+export default TransactionHistory;
 
